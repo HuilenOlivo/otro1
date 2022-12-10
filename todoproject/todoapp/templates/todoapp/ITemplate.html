@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+
+             <h1>GESTION DE AGENDA</h1>   
+            <a class="navbar-brand" href="{% url 'inicio' %}">inicio</a>
+            <br>
+            <a class="navbar-brand" href="{% url 'todoAppCreate'%}">Cargar rocordatorio</a>
+            <br>
+            <a class="navbar-brand" href="{% url 'ContactCreate' %}">Registrar nuevo Contacto</a>
+            <br>
+            <a class="navbar-brand" href="{% url 'ProjectCreate' %}">Grabar nuevo Proyecto</a>
+            
+        </div>
+    </nav>
+    {% block contenidoQueCambia %}
+
+    {% endblock %}
+</body>
+</html>
